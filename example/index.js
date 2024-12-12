@@ -1,10 +1,15 @@
 import {aesEncrypt,aesDecrypt, getCrypto,rasDecrypt,rsaEncrypt,getJSEncrypt} from "../packages/index";
+
 const {iv,key} = getCrypto({
     iv: '1234567890123456',
     key: '1234567890123456'
 })
 
+// getJSEncrypt().then((res)=>{
+//     console.log(res)
+// })
 
+//
 const privateKey = '-----BEGIN RSA PRIVATE KEY-----\n' +
     'MIIBOAIBAAJASj9QjNul1xu4Bpq6MByZJePADyBsoLvoGj+sSLuaPEy4pdJ6lEqW\n' +
     '0EjpT1nakDzlwXB1IDHQeeHlga31KkSUKwIDAQABAkAxWlLFvr9G9ELoCPOYRXo7\n' +
